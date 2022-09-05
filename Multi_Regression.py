@@ -8,15 +8,7 @@ Original file is located at
 
 # **Regressão Linear**
 
-**CHECKLIST DE COISAS PARA FAZER:**
-
-1.   Dividir o dataset em um de treino e um de testes. (isso é para quando tivermos um dataset maior)
-2.   Utilizar Multioutput para predizer mais de um target.
-3.   Mesclar o meu código com o do Ricardo.
-
 # **Configurações iniciais da regressão**
-
-
 1.   Importando as bibliotecas que serão utilizadas
 1.   Importando o dataset geral
 2.   Filtrando os dados mais importantes
@@ -24,6 +16,7 @@ Original file is located at
 4.   Determinando as variáveis dependentes e independentes
 """
 
+import socket
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -158,3 +151,23 @@ ggplot(aes('Tempo no mapa gerado', 'Tamanho do mapa', 'Passos', 'Porcentagem de 
     + geom_line(aes(y = 'Notas pred'), color = 'blue') \
     + geom_line(aes(y = 'Derrotas pred'), color = 'green') \
     + theme_minimal()
+
+
+"""# **Exemplo de comunicacão com a unity**"""
+
+import socket
+
+s = socket.socket()
+print("Socket Created")
+
+s.bind(('localhost',5058))
+
+s.listen(3)
+print("Waiting for a Connection !!")
+
+while True:
+    c, addr = s.accept()
+    name = c.recv(1024).decode()
+    print("Connected with :",addr, " ", name)
+    c.send(bytes("Welcome to Socket Programming",'utf-8', name))
+    c.close()
