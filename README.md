@@ -49,7 +49,7 @@ Para melhor compreensão do que foi explicado indico os seguintes materiais:
 Detalhes técnicos:
 
 1. Versão da Unity usada: 2021.3.0f1
-2. Ambiente da heroku: https://dashboard.heroku.com/apps/python-integration
+
 
 
 
