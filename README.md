@@ -46,6 +46,11 @@ Para melhor compreensão do que foi explicado indico os seguintes materiais:
 1. Vídeo onde explico o fluxo no jogo: https://youtu.be/9bHxlo3Y1is
 2. Texto contendo explicações mais detalhadas de todo o proejto: [TCC - Kevin Oliveira.pdf](https://github.com/nivek14/Game-AI-Regression/files/10328520/TCC.-.Kevin.Oliveira.pdf)
 
+Detalhes técnicos:
+
+1. Versão da Unity usada: 2021.3.0f1
+2. Ambiente da heroku: https://dashboard.heroku.com/apps/python-integration
+
 
 
 
